@@ -5,14 +5,14 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "kanta-api-production",
     "status": "up",
-    "uptime": "93.01%",
+    "uptime": "93.02%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.93%",
-    "uptimeYear": "97.42%",
+    "uptimeMonth": "99.97%",
+    "uptimeYear": "97.69%",
     "time": 721,
-    "timeDay": 567,
-    "timeWeek": 756,
+    "timeDay": 722,
+    "timeWeek": 741,
     "timeMonth": 880,
     "timeYear": 702,
     "dailyMinutesDown": {
@@ -30,8 +30,7 @@
       "2021-10-09": 1440,
       "2021-10-08": 1440,
       "2021-10-07": 1440,
-      "2021-10-06": 1440,
-      "2021-10-05": 1440
+      "2021-10-06": 1440
     }
   },
   {
@@ -40,14 +39,14 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "kanta-front-production",
     "status": "up",
-    "uptime": "93.02%",
+    "uptime": "93.03%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "97.43%",
+    "uptimeYear": "97.71%",
     "time": 205,
-    "timeDay": 87,
-    "timeWeek": 138,
+    "timeDay": 151,
+    "timeWeek": 137,
     "timeMonth": 1018,
     "timeYear": 206,
     "dailyMinutesDown": {
@@ -62,8 +61,7 @@
       "2021-10-09": 1440,
       "2021-10-08": 1440,
       "2021-10-07": 1440,
-      "2021-10-06": 1440,
-      "2021-10-05": 1440
+      "2021-10-06": 1440
     }
   },
   {
@@ -72,15 +70,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/preprod.kanta.fr.ico",
     "slug": "kanta-api-preprod",
     "status": "up",
-    "uptime": "92.81%",
+    "uptime": "92.83%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "97.18%",
-    "time": 674,
-    "timeDay": 444,
-    "timeWeek": 671,
-    "timeMonth": 601,
+    "uptimeYear": "97.45%",
+    "time": 656,
+    "timeDay": 624,
+    "timeWeek": 649,
+    "timeMonth": 594,
     "timeYear": 647,
     "dailyMinutesDown": {
       "2022-06-15": 26,
@@ -99,8 +97,7 @@
       "2021-10-09": 1440,
       "2021-10-08": 1440,
       "2021-10-07": 1440,
-      "2021-10-06": 1440,
-      "2021-10-05": 1440
+      "2021-10-06": 1440
     }
   },
   {
@@ -109,13 +106,13 @@
     "icon": "https://icons.duckduckgo.com/ip3/preprod.kanta.fr.ico",
     "slug": "kanta-front-preprod",
     "status": "up",
-    "uptime": "92.81%",
+    "uptime": "92.83%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "97.16%",
+    "uptimeYear": "97.43%",
     "time": 165,
-    "timeDay": 86,
+    "timeDay": 152,
     "timeWeek": 137,
     "timeMonth": 123,
     "timeYear": 132,
@@ -135,8 +132,7 @@
       "2021-10-09": 1440,
       "2021-10-08": 1440,
       "2021-10-07": 1440,
-      "2021-10-06": 1440,
-      "2021-10-05": 1440
+      "2021-10-06": 1440
     }
   }
 ]
