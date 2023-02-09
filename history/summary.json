@@ -5,24 +5,23 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "kanta-api-production",
     "status": "up",
-    "uptime": "94.40%",
+    "uptime": "94.41%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.96%",
-    "time": 696,
-    "timeDay": 460,
-    "timeWeek": 531,
-    "timeMonth": 654,
-    "timeYear": 695,
+    "time": 695,
+    "timeDay": 473,
+    "timeWeek": 545,
+    "timeMonth": 649,
+    "timeYear": 694,
     "dailyMinutesDown": {
       "2022-09-20": 15,
       "2022-09-04": 18,
       "2022-06-15": 26,
       "2022-04-11": 17,
       "2022-03-21": 53,
-      "2022-03-17": 25,
-      "2022-02-09": 58
+      "2022-03-17": 25
     }
   },
   {
@@ -31,21 +30,20 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "kanta-front-production",
     "status": "up",
-    "uptime": "94.41%",
+    "uptime": "94.42%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.97%",
     "time": 185,
-    "timeDay": 84,
+    "timeDay": 82,
     "timeWeek": 108,
-    "timeMonth": 119,
+    "timeMonth": 117,
     "timeYear": 200,
     "dailyMinutesDown": {
       "2022-06-15": 26,
       "2022-04-11": 16,
-      "2022-03-21": 36,
-      "2022-02-09": 58
+      "2022-03-21": 36
     }
   },
   {
@@ -54,23 +52,22 @@
     "icon": "https://icons.duckduckgo.com/ip3/preprod.kanta.fr.ico",
     "slug": "kanta-api-preprod",
     "status": "up",
-    "uptime": "94.25%",
+    "uptime": "94.26%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.76%",
     "time": 635,
-    "timeDay": 407,
-    "timeWeek": 534,
-    "timeMonth": 597,
+    "timeDay": 538,
+    "timeWeek": 553,
+    "timeMonth": 590,
     "timeYear": 621,
     "dailyMinutesDown": {
       "2022-06-15": 26,
       "2022-06-04": 460,
       "2022-06-03": 660,
       "2022-05-16": 42,
-      "2022-04-11": 22,
-      "2022-02-09": 58
+      "2022-04-11": 22
     }
   },
   {
@@ -79,23 +76,22 @@
     "icon": "https://icons.duckduckgo.com/ip3/preprod.kanta.fr.ico",
     "slug": "kanta-front-preprod",
     "status": "up",
-    "uptime": "94.25%",
+    "uptime": "94.26%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.76%",
     "time": 129,
-    "timeDay": 78,
-    "timeWeek": 110,
-    "timeMonth": 121,
+    "timeDay": 85,
+    "timeWeek": 111,
+    "timeMonth": 119,
     "timeYear": 126,
     "dailyMinutesDown": {
       "2022-06-15": 26,
       "2022-06-04": 460,
       "2022-06-03": 660,
       "2022-04-11": 22,
-      "2022-03-16": 50,
-      "2022-02-09": 58
+      "2022-03-16": 50
     }
   }
 ]
