@@ -11,15 +11,14 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
     "time": 685,
-    "timeDay": 807,
-    "timeWeek": 684,
-    "timeMonth": 654,
+    "timeDay": 632,
+    "timeWeek": 707,
+    "timeMonth": 626,
     "timeYear": 682,
     "dailyMinutesDown": {
       "2022-09-20": 15,
       "2022-09-04": 18,
-      "2022-06-15": 26,
-      "2022-04-11": 17
+      "2022-06-15": 26
     }
   },
   {
@@ -34,13 +33,12 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
     "time": 181,
-    "timeDay": 149,
-    "timeWeek": 119,
+    "timeDay": 117,
+    "timeWeek": 123,
     "timeMonth": 113,
     "timeYear": 195,
     "dailyMinutesDown": {
-      "2022-06-15": 26,
-      "2022-04-11": 16
+      "2022-06-15": 26
     }
   },
   {
@@ -49,22 +47,21 @@
     "icon": "https://icons.duckduckgo.com/ip3/preprod.kanta.fr.ico",
     "slug": "kanta-api-preprod",
     "status": "up",
-    "uptime": "94.75%",
+    "uptime": "94.76%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.77%",
-    "time": 618,
-    "timeDay": 614,
-    "timeWeek": 628,
-    "timeMonth": 551,
-    "timeYear": 604,
+    "time": 619,
+    "timeDay": 1016,
+    "timeWeek": 710,
+    "timeMonth": 564,
+    "timeYear": 605,
     "dailyMinutesDown": {
       "2022-06-15": 26,
       "2022-06-04": 460,
       "2022-06-03": 660,
-      "2022-05-16": 42,
-      "2022-04-11": 22
+      "2022-05-16": 42
     }
   },
   {
@@ -73,21 +70,20 @@
     "icon": "https://icons.duckduckgo.com/ip3/preprod.kanta.fr.ico",
     "slug": "kanta-front-preprod",
     "status": "up",
-    "uptime": "94.75%",
+    "uptime": "94.76%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.78%",
     "time": 126,
-    "timeDay": 151,
-    "timeWeek": 120,
+    "timeDay": 119,
+    "timeWeek": 125,
     "timeMonth": 113,
     "timeYear": 121,
     "dailyMinutesDown": {
       "2022-06-15": 26,
       "2022-06-04": 460,
-      "2022-06-03": 660,
-      "2022-04-11": 22
+      "2022-06-03": 660
     }
   }
 ]
