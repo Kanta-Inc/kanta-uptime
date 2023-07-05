@@ -6,9 +6,9 @@
     "slug": "kanta-api-production",
     "status": "down",
     "uptime": "99.98%",
-    "uptimeDay": "96.07%",
-    "uptimeWeek": "99.44%",
-    "uptimeMonth": "99.87%",
+    "uptimeDay": "95.80%",
+    "uptimeWeek": "99.40%",
+    "uptimeMonth": "99.86%",
     "uptimeYear": "99.98%",
     "time": 670,
     "timeDay": 589,
@@ -16,7 +16,7 @@
     "timeMonth": 623,
     "timeYear": 668,
     "dailyMinutesDown": {
-      "2023-07-05": 57,
+      "2023-07-05": 61,
       "2022-09-20": 15,
       "2022-09-04": 18
     }
@@ -26,19 +26,19 @@
     "url": "https://app.kanta.fr",
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "kanta-front-production",
-    "status": "down",
+    "status": "up",
     "uptime": "99.99%",
-    "uptimeDay": "98.84%",
-    "uptimeWeek": "99.83%",
-    "uptimeMonth": "99.96%",
+    "uptimeDay": "98.57%",
+    "uptimeWeek": "99.80%",
+    "uptimeMonth": "99.95%",
     "uptimeYear": "100.00%",
     "time": 175,
-    "timeDay": 94,
-    "timeWeek": 98,
-    "timeMonth": 108,
+    "timeDay": 110,
+    "timeWeek": 104,
+    "timeMonth": 110,
     "timeYear": 191,
     "dailyMinutesDown": {
-      "2023-07-05": 17
+      "2023-07-05": 21
     }
   },
   {
