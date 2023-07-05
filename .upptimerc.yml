@@ -12,9 +12,11 @@ sites:
   - name: Kanta API - Preprod
     url: https://preprod.kanta.fr/api
     expectedStatusCodes:
-      - 404
+      - 403
   - name: Kanta Front - Preprod
     url: https://preprod.kanta.fr
+    expectedStatusCodes:
+      - 403
 
 status-website:
   theme: night
