@@ -1,7 +1,7 @@
 url: https://app.kanta.fr/api
-status: up
-code: 404
-responseTime: 484
-lastUpdated: 2023-07-04T23:18:10.185Z
+status: down
+code: 503
+responseTime: 857
+lastUpdated: 2023-07-05T20:44:31.200Z
 startTime: Thu May 13 2021 17:11:04 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
