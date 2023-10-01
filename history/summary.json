@@ -11,10 +11,10 @@
     "uptimeMonth": "99.95%",
     "uptimeYear": "99.98%",
     "time": 654,
-    "timeDay": 603,
-    "timeWeek": 532,
+    "timeDay": 382,
+    "timeWeek": 484,
     "timeMonth": 600,
-    "timeYear": 639,
+    "timeYear": 638,
     "dailyMinutesDown": {
       "2023-09-11": 22,
       "2023-07-05": 67
@@ -32,10 +32,10 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 170,
-    "timeDay": 114,
-    "timeWeek": 110,
-    "timeMonth": 108,
-    "timeYear": 113,
+    "timeDay": 86,
+    "timeWeek": 100,
+    "timeMonth": 109,
+    "timeYear": 112,
     "dailyMinutesDown": {
       "2023-07-05": 21
     }
@@ -46,15 +46,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/preprod.kanta.fr.ico",
     "slug": "kanta-api-preprod",
     "status": "up",
-    "uptime": "95.78%",
+    "uptime": "95.79%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.97%",
     "time": 579,
-    "timeDay": 564,
-    "timeWeek": 538,
-    "timeMonth": 549,
+    "timeDay": 432,
+    "timeWeek": 506,
+    "timeMonth": 555,
     "timeYear": 576,
     "dailyMinutesDown": {
       "2023-07-05": 82,
@@ -73,10 +73,10 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.97%",
     "time": 115,
-    "timeDay": 109,
-    "timeWeek": 109,
-    "timeMonth": 108,
-    "timeYear": 114,
+    "timeDay": 85,
+    "timeWeek": 99,
+    "timeMonth": 109,
+    "timeYear": 113,
     "dailyMinutesDown": {
       "2023-07-05": 82,
       "2023-06-21": 75
