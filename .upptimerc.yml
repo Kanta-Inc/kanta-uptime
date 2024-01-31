@@ -4,19 +4,11 @@ repo: kanta-uptime # The name of this repository
 
 sites:
   - name: Kanta API - Production
-    url: https://app.kanta.fr/api
+    url: https://app.kanta.fr/api/v1/info
     expectedStatusCodes:
-      - 404
+      - 200
   - name: Kanta Front - Production
     url: https://app.kanta.fr
-  - name: Kanta API - Preprod
-    url: https://preprod.kanta.fr/api
-    expectedStatusCodes:
-      - 403
-  - name: Kanta Front - Preprod
-    url: https://preprod.kanta.fr
-    expectedStatusCodes:
-      - 403
 
 status-website:
   theme: night
