@@ -1,7 +1,7 @@
 url: https://app.kanta.fr
-status: up
-code: 200
+status: down
+code: 403
 responseTime: 89
-lastUpdated: 2024-11-13T23:05:18.506Z
+lastUpdated: 2024-11-14T00:00:12.068Z
 startTime: 2021-05-13T17:11:07.000Z
 generator: Upptime <https://github.com/upptime/upptime>
