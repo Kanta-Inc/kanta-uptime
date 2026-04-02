@@ -4,17 +4,17 @@
     "url": "https://app.kanta.fr/api/v1/info",
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "kanta-api-production",
-    "status": "up",
+    "status": "down",
     "uptime": "99.96%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 598,
-    "timeDay": 671,
-    "timeWeek": 572,
-    "timeMonth": 595,
-    "timeYear": 598,
+    "time": 600,
+    "timeDay": 665,
+    "timeWeek": 583,
+    "timeMonth": 597,
+    "timeYear": 600,
     "dailyMinutesDown": {
       "2026-02-02": 18
     }
