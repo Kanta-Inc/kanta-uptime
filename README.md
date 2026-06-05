@@ -26,12 +26,12 @@ Le monitoring est propulsé par [Upptime](https://github.com/upptime/upptime) (c
 
 ## 🛠️ Fonctionnement
 
-| Brique | Rôle |
-| --- | --- |
-| `Uptime CI` | Teste les services toutes les 5 min et journalise dans `history/` |
-| `Response Time CI` / `Graphs CI` | Génèrent les `api/*.json` et les graphes de temps de réponse |
-| `Summary CI` | Régénère `history/summary.json` (et le tableau ci-dessus) toutes les 30 min |
-| `Static Site CI` | Assemble [`site-custom/`](./site-custom) + `summary.json` et publie sur GitHub Pages (`status.kanta.fr`) |
+| Brique                           | Rôle                                                                                                     |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `Uptime CI`                      | Teste les services toutes les 5 min et journalise dans `history/`                                        |
+| `Response Time CI` / `Graphs CI` | Génèrent les `api/*.json` et les graphes de temps de réponse                                             |
+| `Summary CI`                     | Régénère `history/summary.json` (et le tableau ci-dessus) toutes les 30 min                              |
+| `Static Site CI`                 | Assemble [`site-custom/`](./site-custom) + `summary.json` et publie sur GitHub Pages (`status.kanta.fr`) |
 
 La page publique ([`site-custom/index.html`](./site-custom/index.html)) lit **uniquement** `summary.json` en live : aucune donnée n'est codée en dur, et si la donnée est indisponible elle affiche un état d'erreur plutôt qu'un faux chiffre. L'uptime affiché est sur **30 jours**.
 
@@ -40,11 +40,11 @@ La page publique ([`site-custom/index.html`](./site-custom/index.html)) lit **un
 
 ## 🌐 Services surveillés
 
-| Service | URL surveillée |
-| --- | --- |
-| Application | https://app.kanta.fr |
-| API | https://app.kanta.fr/api/v1/info |
-| Site vitrine | https://kanta.fr |
+| Service      | URL surveillée                   |
+| ------------ | -------------------------------- |
+| Application  | https://app.kanta.fr             |
+| API          | https://app.kanta.fr/api/v1/info |
+| Site vitrine | https://kanta.fr                 |
 
 La configuration se modifie dans [`.upptimerc.yml`](./.upptimerc.yml).
 
