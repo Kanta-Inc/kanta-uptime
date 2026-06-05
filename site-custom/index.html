@@ -64,6 +64,7 @@
     }
     .service .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
     .service .name { font-weight: 500; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .service .name .host { color: var(--muted); font-weight: 400; font-size: 13px; }
     .service .uptime { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
     .service .pill {
       font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
@@ -126,11 +127,20 @@
         var cls = s.status === "down" ? "s-down" : s.status === "degraded" ? "s-degraded" : "s-up";
         return '<div class="service ' + cls + '">'
           + '<span class="dot"></span>'
-          + '<span class="name">' + escapeHtml(s.name) + '</span>'
+          + '<span class="name">' + escapeHtml(s.name)
+            + (s.url ? ' <span class="host">(' + escapeHtml(displayUrl(s.url)) + ')</span>' : '')
+            + '</span>'
           + '<span class="uptime">' + (s.uptimeMonth || "") + ' sur 30 j</span>'
           + '<span class="pill">' + (LABELS[s.status] || s.status) + '</span>'
           + '</div>';
       }).join("");
+    }
+
+    // hôte + 1er segment de chemin : app.kanta.fr/api/v1/info -> app.kanta.fr/api
+    function displayUrl(url) {
+      var u = String(url).replace(/^https?:\/\//, "").replace(/\/+$/, "");
+      var parts = u.split("/");
+      return parts.length > 1 && parts[1] ? parts[0] + "/" + parts[1] : parts[0];
     }
 
     function escapeHtml(str) {
