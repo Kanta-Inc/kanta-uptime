@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Kanta API - Production",
+    "url": "https://app.kanta.fr/api/v1/info",
+    "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
+    "slug": "kanta-api-production",
+    "status": "up",
+    "uptime": "99.97%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "99.99%",
+    "time": 612,
+    "timeDay": 584,
+    "timeWeek": 622,
+    "timeMonth": 612,
+    "timeYear": 612,
+    "dailyMinutesDown": {
+      "2026-02-02": 18,
+      "2026-04-02": 21
+    }
+  },
+  {
+    "name": "Kanta Front - Production",
+    "url": "https://app.kanta.fr",
+    "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
+    "slug": "kanta-front-production",
+    "status": "up",
+    "uptime": "99.98%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 240,
+    "timeDay": 492,
+    "timeWeek": 513,
+    "timeMonth": 564,
+    "timeYear": 240,
+    "dailyMinutesDown": {}
+  }
+]
