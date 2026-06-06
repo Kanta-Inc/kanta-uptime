@@ -4,11 +4,11 @@ Page de statut publique des services Kanta : **[status.kanta.fr](https://status.
 
 Le monitoring est propulsé par [Upptime](https://github.com/upptime/upptime) (checks toutes les 5 minutes via GitHub Actions). La page publique, elle, est une **page statique custom** maintenue dans [`site-custom/`](./site-custom) — pas l'UI Upptime par défaut.
 
-[![Uptime CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Uptime%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/uptime.yml)
-[![Response Time CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Response%20Time%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/response-time.yml)
-[![Graphs CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Graphs%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/graphs.yml)
-[![Static Site CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/site.yml)
-[![Summary CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Summary%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/summary.yml)
+[![Uptime CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/uptime.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/uptime.yml)
+[![Response Time CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/response-time.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/response-time.yml)
+[![Graphs CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/graphs.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/graphs.yml)
+[![Static Site CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/site.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/site.yml)
+[![Summary CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/summary.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/summary.yml)
 
 [**→ Voir la page de statut**](https://status.kanta.fr)
 
