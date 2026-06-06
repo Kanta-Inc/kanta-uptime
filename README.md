@@ -4,10 +4,10 @@ Page de statut publique des services Kanta : **[status.kanta.fr](https://status.
 
 Le monitoring est propulsé par [Upptime](https://github.com/upptime/upptime) (checks toutes les 5 minutes via GitHub Actions). La page publique, elle, est une **page statique custom** maintenue dans [`site-custom/`](./site-custom) — pas l'UI Upptime par défaut.
 
-[![Uptime CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/uptime.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/uptime.yml)
-[![Response Time CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/response-time.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/response-time.yml)
-[![Static Site CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/site.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/site.yml)
-[![Summary CI](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/summary.yml/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/summary.yml)
+[![Uptime CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Uptime%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/uptime.yml)
+[![Response Time CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Response%20Time%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/response-time.yml)
+[![Static Site CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/site.yml)
+[![Summary CI](https://github.com/Kanta-Inc/kanta-uptime/workflows/Summary%20CI/badge.svg)](https://github.com/Kanta-Inc/kanta-uptime/actions/workflows/summary.yml)
 
 ## 📊 Statut en direct
 
@@ -20,13 +20,13 @@ Le monitoring est propulsé par [Upptime](https://github.com/upptime/upptime) (c
 
 ## 🛠️ Fonctionnement
 
-| Brique             | Rôle                                                                                                     |
-| ------------------ | -------------------------------------------------------------------------------------------------------- |
+| Brique             | Rôle                                                                                                       |
+| ------------------ | ---------------------------------------------------------------------------------------------------------- |
 | `Uptime CI`        | Teste les services toutes les 5 min ; journalise dans `history/` (commit uniquement sur changement d'état) |
-| `Response Time CI` | Enregistre un point de temps de réponse dans `history/` une fois par jour                                |
-| `Graphs CI`        | Génère `api/*.json` + les PNG de courbes — ⚠️ **KO en amont depuis Upptime v1.41.5**                      |
-| `Summary CI`       | Régénère `history/summary.json` toutes les 30 min (consommé par la page custom)                          |
-| `Static Site CI`   | Assemble [`site-custom/`](./site-custom) + `summary.json` et publie sur GitHub Pages (`status.kanta.fr`) |
+| `Response Time CI` | Enregistre un point de temps de réponse dans `history/` une fois par jour                                  |
+| `Graphs CI`        | Génère `api/*.json` + les PNG de courbes — ⚠️ **KO en amont depuis Upptime v1.41.5**                       |
+| `Summary CI`       | Régénère `history/summary.json` toutes les 30 min (consommé par la page custom)                            |
+| `Static Site CI`   | Assemble [`site-custom/`](./site-custom) + `summary.json` et publie sur GitHub Pages (`status.kanta.fr`)   |
 
 La page publique ([`site-custom/index.html`](./site-custom/index.html)) lit **uniquement** `summary.json` en live : aucune donnée n'est codée en dur, et si la donnée est indisponible elle affiche un état d'erreur plutôt qu'un faux chiffre. L'uptime affiché est sur **30 jours**.
 
