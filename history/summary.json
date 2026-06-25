@@ -22,18 +22,20 @@
     "url": "https://app.kanta.fr/api/v1/info",
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 509,
-    "timeDay": 643,
-    "timeWeek": 555,
-    "timeMonth": 509,
-    "timeYear": 509,
-    "dailyMinutesDown": {}
+    "time": 513,
+    "timeDay": 625,
+    "timeWeek": 562,
+    "timeMonth": 513,
+    "timeYear": 513,
+    "dailyMinutesDown": {
+      "2026-06-25": 0
+    }
   },
   {
     "name": "Site vitrine",
