@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 545,
-    "timeDay": 447,
-    "timeWeek": 499,
-    "timeMonth": 561,
-    "timeYear": 545,
+    "time": 547,
+    "timeDay": 561,
+    "timeWeek": 537,
+    "timeMonth": 565,
+    "timeYear": 547,
     "dailyMinutesDown": {}
   },
   {
@@ -22,21 +22,21 @@
     "url": "https://app.kanta.fr/api/v1/info",
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "api",
-    "status": "down",
+    "status": "up",
     "uptime": "99.64%",
-    "uptimeDay": "89.31%",
-    "uptimeWeek": "98.15%",
+    "uptimeDay": "89.17%",
+    "uptimeWeek": "98.13%",
     "uptimeMonth": "99.45%",
     "uptimeYear": "99.64%",
-    "time": 551,
-    "timeDay": 461,
-    "timeWeek": 559,
-    "timeMonth": 584,
-    "timeYear": 551,
+    "time": 554,
+    "timeDay": 569,
+    "timeWeek": 572,
+    "timeMonth": 587,
+    "timeYear": 554,
     "dailyMinutesDown": {
       "2026-06-25": 53,
       "2026-07-20": 32,
-      "2026-07-21": 154
+      "2026-07-21": 156
     }
   },
   {
@@ -50,11 +50,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 777,
-    "timeDay": 391,
-    "timeWeek": 514,
-    "timeMonth": 748,
-    "timeYear": 777,
+    "time": 773,
+    "timeDay": 489,
+    "timeWeek": 548,
+    "timeMonth": 743,
+    "timeYear": 773,
     "dailyMinutesDown": {}
   }
 ]
