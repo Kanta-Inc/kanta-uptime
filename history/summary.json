@@ -23,11 +23,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "api",
     "status": "down",
-    "uptime": "99.69%",
-    "uptimeDay": "91.55%",
-    "uptimeWeek": "98.47%",
-    "uptimeMonth": "99.53%",
-    "uptimeYear": "99.69%",
+    "uptime": "99.64%",
+    "uptimeDay": "89.31%",
+    "uptimeWeek": "98.15%",
+    "uptimeMonth": "99.45%",
+    "uptimeYear": "99.64%",
     "time": 551,
     "timeDay": 461,
     "timeWeek": 559,
@@ -36,7 +36,7 @@
     "dailyMinutesDown": {
       "2026-06-25": 53,
       "2026-07-20": 32,
-      "2026-07-21": 122
+      "2026-07-21": 154
     }
   },
   {
