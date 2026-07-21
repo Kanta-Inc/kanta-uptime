@@ -22,7 +22,7 @@
     "url": "https://app.kanta.fr/api/v1/info",
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "api",
-    "status": "up",
+    "status": "down",
     "uptime": "99.87%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "99.68%",
