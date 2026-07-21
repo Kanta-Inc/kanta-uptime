@@ -1,4 +1,4 @@
-# 📈 Statut Kanta — [status.kanta.fr](https://status.kanta.fr): <!--live status--> **🟧 Partial outage**
+# 📈 Statut Kanta — [status.kanta.fr](https://status.kanta.fr): <!--live status--> **Tous les systèmes sont opérationnels**
 
 Page de statut publique des services Kanta : **[status.kanta.fr](https://status.kanta.fr)**
 
