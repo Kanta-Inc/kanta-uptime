@@ -107,8 +107,9 @@
 
   <script>
     // Aucune donnée en dur : on n'affiche QUE ce que renvoie ./summary.json (donnée live).
-    // Tant qu'on n'a rien → "Chargement…" ; si le fetch échoue → message d'erreur, jamais de faux chiffre.
+    // Les données trop anciennes sont signalées au lieu d'afficher un faux état « En ligne ».
     var LABELS = { up: "En ligne", down: "Hors ligne", degraded: "Dégradé" };
+    var MAX_DATA_AGE_MS = 45 * 60 * 1000;
 
     function render(data) {
       var allUp = data.every(function (s) { return s.status === "up"; });
@@ -149,11 +150,11 @@
       });
     }
 
-    function setUpdated() {
-      var now = new Date();
+    function setUpdated(updatedAt) {
+      var date = updatedAt || new Date();
       document.getElementById("updated").textContent =
-        "Mis à jour le " + now.toLocaleDateString("fr-FR") + " à " +
-        now.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+        "Mis à jour le " + date.toLocaleDateString("fr-FR") + " à " +
+        date.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
     }
 
     function showError() {
@@ -165,12 +166,29 @@
         "Impossible de récupérer l'état des services. Réessayez dans quelques instants.";
     }
 
-    fetch("./summary.json", { cache: "no-store" })
-      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-      .then(function (data) {
+    function showStale() {
+      var banner = document.getElementById("banner");
+      banner.className = "banner degraded";
+      banner.querySelector(".label").textContent = "Données de statut obsolètes";
+      document.getElementById("services").innerHTML = "";
+      document.getElementById("updated").textContent =
+        "Le monitoring ne s'est pas mis à jour depuis plus de 45 minutes.";
+    }
+
+    Promise.all([
+      fetch("./summary.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : Promise.reject(); }),
+      fetch("./status-meta.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    ])
+      .then(function (result) {
+        var data = result[0];
+        var summaryUpdatedAt = Date.parse(result[1].summaryUpdatedAt);
         if (!Array.isArray(data) || !data.length) return Promise.reject();
+        if (!Number.isFinite(summaryUpdatedAt) || Date.now() - summaryUpdatedAt > MAX_DATA_AGE_MS) {
+          showStale();
+          return;
+        }
         render(data);
-        setUpdated();
+        setUpdated(new Date(summaryUpdatedAt));
       })
       .catch(showError);
   </script>
