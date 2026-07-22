@@ -40,3 +40,11 @@ jobs:
           command: "readme"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
+      # Les commits effectués avec github.token ne déclenchent pas un workflow
+      # `push` supplémentaire. On demande donc explicitement la publication de
+      # la page custom après chaque régénération du résumé.
+      - name: Publish custom status page
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Static Site CI
+          token: ${{ secrets.GH_PAT || github.token }}
