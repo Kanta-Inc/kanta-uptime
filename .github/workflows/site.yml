@@ -26,17 +26,12 @@ jobs:
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ secrets.GH_PAT || github.token }}
-          # Requis pour dater la dernière modification réelle du résumé.
-          fetch-depth: 0
       - name: Assemble site
         run: |
           rm -rf _site && mkdir -p _site
           cp -r site-custom/. _site/
           rm -f _site/.gitignore   # sinon peaceiris exclut summary.json du déploiement
           cp history/summary.json _site/summary.json
-          # Le navigateur peut ainsi détecter une chaîne de monitoring bloquée,
-          # même si la publication planifiée continue à s'exécuter.
-          printf '{"summaryUpdatedAt":"%s"}\n' "$(git log -1 --format=%cI -- history/summary.json)" > _site/status-meta.json
       - uses: peaceiris/actions-gh-pages@v4
         name: GitHub Pages Deploy
         with:
