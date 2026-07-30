@@ -22,22 +22,23 @@
     "url": "https://app.kanta.fr/api/v1/info",
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "api",
-    "status": "up",
+    "status": "down",
     "uptime": "99.66%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "99.71%",
     "uptimeMonth": "99.50%",
     "uptimeYear": "99.66%",
-    "time": 548,
-    "timeDay": 433,
-    "timeWeek": 514,
-    "timeMonth": 558,
-    "timeYear": 548,
+    "time": 546,
+    "timeDay": 448,
+    "timeWeek": 509,
+    "timeMonth": 555,
+    "timeYear": 546,
     "dailyMinutesDown": {
       "2026-06-25": 53,
       "2026-07-20": 32,
       "2026-07-21": 156,
-      "2026-07-23": 29
+      "2026-07-23": 29,
+      "2026-07-30": 0
     }
   },
   {
