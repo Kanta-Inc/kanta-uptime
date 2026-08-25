@@ -46,19 +46,19 @@
     "url": "https://kanta.fr",
     "icon": "https://icons.duckduckgo.com/ip3/kanta.fr.ico",
     "slug": "site-vitrine",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 748,
-    "timeDay": 428,
-    "timeWeek": 560,
-    "timeMonth": 734,
-    "timeYear": 748,
+    "status": "up",
+    "uptime": "99.99%",
+    "uptimeDay": "99.35%",
+    "uptimeWeek": "99.91%",
+    "uptimeMonth": "99.98%",
+    "uptimeYear": "99.99%",
+    "time": 766,
+    "timeDay": 1035,
+    "timeWeek": 747,
+    "timeMonth": 781,
+    "timeYear": 766,
     "dailyMinutesDown": {
-      "2026-08-25": 0
+      "2026-08-25": 9
     }
   }
 ]
