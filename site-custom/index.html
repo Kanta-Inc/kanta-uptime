@@ -54,6 +54,19 @@
     .banner.down .dot  { background: var(--down); box-shadow: 0 0 0 4px color-mix(in srgb, var(--down) 22%, transparent); }
     .banner.degraded .dot { background: var(--degraded); box-shadow: 0 0 0 4px color-mix(in srgb, var(--degraded) 22%, transparent); }
 
+    .periods {
+      display: flex; gap: 2px; width: fit-content; margin: 0 0 10px auto; padding: 3px;
+      background: rgba(255, 255, 255, 0.72); border: 1px solid var(--border); border-radius: 999px;
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    }
+    .periods[hidden] { display: none; }
+    .periods button {
+      font: inherit; font-size: 12px; font-weight: 500; color: var(--muted);
+      background: none; border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer;
+    }
+    .periods button:hover { color: var(--text); }
+    .periods button[aria-pressed="true"] { background: var(--text); color: #fff; }
+
     .services { display: flex; flex-direction: column; gap: 10px; }
     .service {
       display: flex; align-items: center; gap: 14px;
@@ -95,6 +108,13 @@
       <span class="label">Chargement…</span>
     </div>
 
+    <div id="periods" class="periods" role="group" aria-label="Période de disponibilité" hidden>
+      <button type="button" data-period="day" aria-pressed="false">24 h</button>
+      <button type="button" data-period="week" aria-pressed="false">7 j</button>
+      <button type="button" data-period="month" aria-pressed="true">30 j</button>
+      <button type="button" data-period="year" aria-pressed="false">1 an</button>
+    </div>
+
     <div id="services" class="services"></div>
 
     <footer>
@@ -109,8 +129,18 @@
     // Aucune donnée en dur : on n'affiche QUE ce que renvoie ./summary.json (donnée live).
     // Tant qu'on n'a rien → "Chargement…" ; si le fetch échoue → message d'erreur, jamais de faux chiffre.
     var LABELS = { up: "En ligne", down: "Hors ligne", degraded: "Dégradé" };
+    // Périodes calculées par Upptime dans summary.json (champ, libellé affiché).
+    var PERIODS = {
+      day:   { field: "uptimeDay",   label: "24 h" },
+      week:  { field: "uptimeWeek",  label: "7 j" },
+      month: { field: "uptimeMonth", label: "30 j" },
+      year:  { field: "uptimeYear",  label: "1 an" }
+    };
+    var period = "month";
+    var services = [];
 
     function render(data) {
+      services = data;
       var allUp = data.every(function (s) { return s.status === "up"; });
       var anyDown = data.some(function (s) { return s.status === "down"; });
 
@@ -122,19 +152,35 @@
           ? "Une panne est en cours"
           : "Service partiellement dégradé";
 
+      document.getElementById("periods").hidden = false;
+      renderServices();
+    }
+
+    function renderServices() {
+      var p = PERIODS[period];
       var list = document.getElementById("services");
-      list.innerHTML = data.map(function (s) {
+      list.innerHTML = services.map(function (s) {
         var cls = s.status === "down" ? "s-down" : s.status === "degraded" ? "s-degraded" : "s-up";
         return '<div class="service ' + cls + '">'
           + '<span class="dot"></span>'
           + '<span class="name">' + escapeHtml(s.name)
             + (s.url ? ' <span class="host">(' + escapeHtml(displayUrl(s.url)) + ')</span>' : '')
             + '</span>'
-          + '<span class="uptime">' + (s.uptimeMonth || "") + ' sur 30 j</span>'
+          + (s[p.field] ? '<span class="uptime">' + escapeHtml(s[p.field]) + ' sur ' + p.label + '</span>' : '')
           + '<span class="pill">' + (LABELS[s.status] || s.status) + '</span>'
           + '</div>';
       }).join("");
     }
+
+    document.getElementById("periods").addEventListener("click", function (e) {
+      var btn = e.target.closest("button[data-period]");
+      if (!btn || !PERIODS[btn.dataset.period]) return;
+      period = btn.dataset.period;
+      this.querySelectorAll("button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b === btn));
+      });
+      renderServices();
+    });
 
     // hôte + 1er segment de chemin : app.kanta.fr/api/v1/info -> app.kanta.fr/api
     function displayUrl(url) {
@@ -160,6 +206,7 @@
       var banner = document.getElementById("banner");
       banner.className = "banner degraded";
       banner.querySelector(".label").textContent = "État indisponible pour le moment";
+      document.getElementById("periods").hidden = true;
       document.getElementById("services").innerHTML = "";
       document.getElementById("updated").textContent =
         "Impossible de récupérer l'état des services. Réessayez dans quelques instants.";

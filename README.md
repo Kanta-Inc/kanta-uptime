@@ -13,7 +13,7 @@ Le monitoring est propulsé par [Upptime](https://github.com/upptime/upptime) (c
 
 > **→ [status.kanta.fr](https://status.kanta.fr)**
 >
-> Le statut, l'uptime sur **30 jours** et le temps de réponse de chaque service y sont mis à jour en continu (via `summary.json`). Détail et incidents par service :
+> Le statut, l'uptime (24 h, 7 j, 30 j ou 1 an) et le temps de réponse de chaque service y sont mis à jour en continu (via `summary.json`). Détail et incidents par service :
 > [Application](https://status.kanta.fr/history/application) · [API](https://status.kanta.fr/history/api) · [Site vitrine](https://status.kanta.fr/history/site-vitrine)
 
 > ℹ️ Ce README **n'embarque volontairement pas** le tableau ni les graphes générés par Upptime. La génération des `api/*.json` et des PNG de courbes (`@upptime/graphs`) est cassée en amont depuis Upptime v1.41.5 (mai 2026, échec de la dépendance native `canvas`) : embarquer ces ressources produisait des badges et images en 404. La source de vérité reste `summary.json` et la page custom.
@@ -28,7 +28,7 @@ Le monitoring est propulsé par [Upptime](https://github.com/upptime/upptime) (c
 | `Summary CI`       | Régénère `history/summary.json` toutes les 30 min (consommé par la page custom)                            |
 | `Static Site CI`   | Assemble [`site-custom/`](./site-custom) + `summary.json` et publie sur GitHub Pages (`status.kanta.fr`)   |
 
-La page publique ([`site-custom/index.html`](./site-custom/index.html)) lit **uniquement** `summary.json` en live : aucune donnée n'est codée en dur, et si la donnée est indisponible elle affiche un état d'erreur plutôt qu'un faux chiffre. L'uptime affiché est sur **30 jours**.
+La page publique ([`site-custom/index.html`](./site-custom/index.html)) lit **uniquement** `summary.json` en live : aucune donnée n'est codée en dur, et si la donnée est indisponible elle affiche un état d'erreur plutôt qu'un faux chiffre. L'uptime affiché est sur **30 jours** par défaut ; un sélecteur permet de passer sur 24 h, 7 j ou 1 an (champs `uptimeDay`/`uptimeWeek`/`uptimeMonth`/`uptimeYear` de `summary.json`).
 
 > ⚠️ **`Setup CI` et `Update Template CI` sont volontairement désactivés** (au niveau GitHub).
 > Ils régénèrent les workflows depuis le template Upptime à chaque push et réinstallent l'UI Upptime par-dessus la page custom. En contrepartie, Upptime ne se met plus à jour automatiquement : pour récupérer une nouvelle version, il faut les réactiver, lancer la mise à jour, puis restaurer `site.yml`.
