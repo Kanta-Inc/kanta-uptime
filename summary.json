@@ -1,7 +1,7 @@
 [
   {
     "name": "Application",
-    "url": "https://app.kanta.fr",
+    "url": "https://app.kanta.fr/up",
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "application",
     "status": "up",
@@ -16,30 +16,6 @@
     "timeMonth": 646,
     "timeYear": 590,
     "dailyMinutesDown": {}
-  },
-  {
-    "name": "API",
-    "url": "https://app.kanta.fr/api/v1/info",
-    "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
-    "slug": "api",
-    "status": "up",
-    "uptime": "99.84%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "99.84%",
-    "time": 572,
-    "timeDay": 518,
-    "timeWeek": 589,
-    "timeMonth": 603,
-    "timeYear": 572,
-    "dailyMinutesDown": {
-      "2026-06-25": 53,
-      "2026-07-20": 32,
-      "2026-07-21": 156,
-      "2026-07-23": 29,
-      "2026-07-30": 35
-    }
   },
   {
     "name": "Site vitrine",
