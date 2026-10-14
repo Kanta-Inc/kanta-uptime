@@ -4,12 +4,8 @@ repo: kanta-uptime # The name of this repository
 
 sites:
   - name: Application
-    url: https://app.kanta.fr
-  - name: API
-    # /api renvoie 404 ; on check le endpoint santé qui répond 200
-    url: https://app.kanta.fr/api/v1/info
-    expectedStatusCodes:
-      - 200
+    # endpoint santé dédié de l'app (renvoie 200 "OK")
+    url: https://app.kanta.fr/up
   - name: Site vitrine
     url: https://kanta.fr
 

@@ -14,7 +14,7 @@ Le monitoring est propulsé par [Upptime](https://github.com/upptime/upptime) (c
 > **→ [status.kanta.fr](https://status.kanta.fr)**
 >
 > Le statut, l'uptime (24 h, 7 j, 30 j ou 1 an) et le temps de réponse de chaque service y sont mis à jour en continu (via `summary.json`). Détail et incidents par service :
-> [Application](https://status.kanta.fr/history/application) · [API](https://status.kanta.fr/history/api) · [Site vitrine](https://status.kanta.fr/history/site-vitrine)
+> [Application](https://status.kanta.fr/history/application) · [Site vitrine](https://status.kanta.fr/history/site-vitrine)
 
 > ℹ️ Ce README **n'embarque volontairement pas** le tableau ni les graphes générés par Upptime. La génération des `api/*.json` et des PNG de courbes (`@upptime/graphs`) est cassée en amont depuis Upptime v1.41.5 (mai 2026, échec de la dépendance native `canvas`) : embarquer ces ressources produisait des badges et images en 404. La source de vérité reste `summary.json` et la page custom.
 
@@ -37,8 +37,7 @@ La page publique ([`site-custom/index.html`](./site-custom/index.html)) lit **un
 
 | Service      | URL surveillée                   |
 | ------------ | -------------------------------- |
-| Application  | https://app.kanta.fr             |
-| API          | https://app.kanta.fr/api/v1/info |
+| Application  | https://app.kanta.fr/up          |
 | Site vitrine | https://kanta.fr                 |
 
 La configuration se modifie dans [`.upptimerc.yml`](./.upptimerc.yml).
