@@ -35,10 +35,10 @@ La page publique ([`site-custom/index.html`](./site-custom/index.html)) lit **un
 
 ## 🌐 Services surveillés
 
-| Service      | URL surveillée                   |
-| ------------ | -------------------------------- |
-| Application  | https://app.kanta.fr/up          |
-| Site vitrine | https://kanta.fr                 |
+| Service      | URL surveillée          |
+| ------------ | ----------------------- |
+| Application  | https://app.kanta.fr/up |
+| Site vitrine | https://kanta.fr        |
 
 La configuration se modifie dans [`.upptimerc.yml`](./.upptimerc.yml).
 
