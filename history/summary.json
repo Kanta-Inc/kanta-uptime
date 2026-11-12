@@ -22,17 +22,17 @@
     "url": "https://kanta.fr",
     "icon": "https://icons.duckduckgo.com/ip3/kanta.fr.ico",
     "slug": "site-vitrine",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 752,
-    "timeDay": 462,
-    "timeWeek": 614,
-    "timeMonth": 732,
-    "timeYear": 752,
+    "time": 1044,
+    "timeDay": 19997,
+    "timeWeek": 5479,
+    "timeMonth": 1945,
+    "timeYear": 1044,
     "dailyMinutesDown": {}
   }
 ]
