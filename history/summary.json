@@ -24,17 +24,15 @@
     "slug": "site-vitrine",
     "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "99.72%",
-    "uptimeWeek": "99.96%",
-    "uptimeMonth": "99.99%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 1315,
     "timeDay": 26084,
     "timeWeek": 9107,
     "timeMonth": 3039,
     "timeYear": 1315,
-    "dailyMinutesDown": {
-      "2026-11-12": 4
-    }
+    "dailyMinutesDown": {}
   }
 ]
