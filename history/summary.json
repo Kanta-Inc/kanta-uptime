@@ -4,18 +4,20 @@
     "url": "https://app.kanta.fr/up",
     "icon": "https://icons.duckduckgo.com/ip3/app.kanta.fr.ico",
     "slug": "application",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.62%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
     "time": 590,
-    "timeDay": 449,
-    "timeWeek": 563,
-    "timeMonth": 593,
+    "timeDay": 486,
+    "timeWeek": 562,
+    "timeMonth": 592,
     "timeYear": 590,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-14": 6
+    }
   },
   {
     "name": "Site vitrine",
