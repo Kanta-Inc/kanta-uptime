@@ -6,16 +6,18 @@
     "slug": "application",
     "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.62%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
-    "time": 591,
-    "timeDay": 374,
-    "timeWeek": 568,
-    "timeMonth": 595,
-    "timeYear": 591,
-    "dailyMinutesDown": {}
+    "time": 590,
+    "timeDay": 486,
+    "timeWeek": 562,
+    "timeMonth": 592,
+    "timeYear": 590,
+    "dailyMinutesDown": {
+      "2026-11-14": 6
+    }
   },
   {
     "name": "Site vitrine",
