@@ -6,16 +6,18 @@
     "slug": "application",
     "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.57%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
     "time": 591,
     "timeDay": 715,
     "timeWeek": 624,
     "timeMonth": 582,
     "timeYear": 591,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-25": 6
+    }
   },
   {
     "name": "Site vitrine",
