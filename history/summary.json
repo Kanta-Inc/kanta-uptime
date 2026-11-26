@@ -6,9 +6,9 @@
     "slug": "application",
     "status": "up",
     "uptime": "99.99%",
-    "uptimeDay": "97.79%",
-    "uptimeWeek": "99.68%",
-    "uptimeMonth": "99.93%",
+    "uptimeDay": "98.31%",
+    "uptimeWeek": "99.76%",
+    "uptimeMonth": "99.94%",
     "uptimeYear": "99.99%",
     "time": 592,
     "timeDay": 613,
@@ -16,8 +16,7 @@
     "timeMonth": 581,
     "timeYear": 592,
     "dailyMinutesDown": {
-      "2026-11-25": 24,
-      "2026-11-26": 7
+      "2026-11-25": 24
     }
   },
   {
